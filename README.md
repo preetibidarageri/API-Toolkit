@@ -74,21 +74,6 @@ Provides:
 - Languages
 - Currency
 
-### 🐙 GitHub User Finder
-
-Uses the GitHub API to search for GitHub users.
-
-Provides:
-
-- Profile picture
-- Name
-- Username
-- Bio
-- Followers
-- Following
-- Public repositories
-- Location
-
 ## 📂 Project Structure
 
 ```text
