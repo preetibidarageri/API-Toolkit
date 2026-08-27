@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Nav from "./component/Nav";
 import Home from "./Pages/Home";
@@ -9,7 +9,7 @@ import Country from "./Pages/Country ";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,7 +18,7 @@ function App() {
         <Route path="/Weather_search" element={<Weather />} />
         <Route path="/Country" element={<Country />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
