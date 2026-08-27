@@ -1,0 +1,429 @@
+.home {
+  min-height: 100vh;
+  background: #eee0cc;
+  color: #7b2525;
+}
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 600px;
+  padding: 70px 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+/* Hero Content */
+
+.heroContent {
+  max-width: 600px;
+}
+
+.tag {
+  display: inline-block;
+  color: #607456;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 58px;
+  line-height: 1.08;
+  margin: 0 0 25px;
+  letter-spacing: -2px;
+}
+
+.hero h1 span {
+  color: #ba6a4c;
+}
+
+.description {
+  color: #607456;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-block;
+  padding: 13px 20px;
+  border-radius: 9px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.primaryButton {
+  background: #607456;
+  color: white;
+}
+
+.primaryButton:hover {
+  background: #7b2525;
+  transform: translateY(-3px);
+}
+
+.secondaryButton {
+  background: transparent;
+  color: #7b2525;
+  border: 2px solid #ba6a4c;
+}
+
+.secondaryButton:hover {
+  background: #ba6a4c;
+  color: white;
+}
+
+/* =========================
+   API CODE CARD
+========================= */
+
+.apiCard {
+  background: #7b2525;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(123, 37, 37, 0.25);
+  transform: rotate(1deg);
+}
+
+.cardHeader {
+  height: 45px;
+  background: #607456;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding-left: 18px;
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #eee0cc;
+}
+
+.code {
+  padding: 30px;
+  min-height: 230px;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #eee0cc;
+}
+
+.code p {
+  margin: 0;
+}
+
+.keyword {
+  color: #ba6a4c;
+}
+
+.string {
+  color: #eee0cc;
+}
+
+.success {
+  color: #607456;
+  font-weight: bold;
+}
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.sectionHeading {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 45px;
+}
+
+.sectionHeading p {
+  color: #ba6a4c;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.sectionHeading h2 {
+  font-size: 38px;
+  margin: 8px 0 12px;
+  color: #7b2525;
+}
+
+.sectionHeading span {
+  color: #607456;
+  line-height: 1.6;
+}
+
+/* =========================
+   TOOLS
+========================= */
+
+.toolsSection {
+  background: #f7ead8;
+  padding: 80px 25px;
+}
+
+.toolsGrid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.toolCard {
+  background: #eee0cc;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #ba6a4c;
+  transition: 0.3s ease;
+}
+
+.toolCard:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 30px rgba(123, 37, 37, 0.15);
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #607456;
+  border-radius: 12px;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.toolCard h3 {
+  color: #7b2525;
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.toolCard p {
+  color: #607456;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.toolLink {
+  color: #ba6a4c;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.toolLink:hover {
+  color: #7b2525;
+}
+
+.comingSoon {
+  color: #607456;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.howSection {
+  padding: 85px 25px;
+  background: #eee0cc;
+}
+
+.steps {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.step {
+  text-align: center;
+}
+
+.step span {
+  color: #ba6a4c;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.step h3 {
+  color: #7b2525;
+  margin: 12px 0;
+}
+
+.step p {
+  color: #607456;
+  line-height: 1.6;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+  max-width: 900px;
+  margin: 70px auto;
+  padding: 60px 25px;
+  text-align: center;
+  background: #7b2525;
+  color: #eee0cc;
+  border-radius: 20px;
+}
+
+.cta h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  color: #eee0cc;
+  opacity: 0.85;
+  margin-bottom: 30px;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 13px 25px;
+  background: #607456;
+  color: white;
+  text-decoration: none;
+  border-radius: 9px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: #ba6a4c;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 55px;
+    gap: 40px;
+  }
+
+  .heroContent {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .apiCard {
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    transform: none;
+  }
+
+  .toolsGrid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    gap: 35px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 45px 18px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    text-align: center;
+  }
+
+  .code {
+    padding: 20px;
+    font-size: 12px;
+    overflow-x: auto;
+  }
+
+  .sectionHeading h2 {
+    font-size: 30px;
+  }
+
+  .toolsSection,
+  .howSection {
+    padding: 60px 18px;
+  }
+
+  .cta {
+    margin: 45px 15px;
+    padding: 45px 20px;
+  }
+
+  .cta h2 {
+    font-size: 30px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .apiCard {
+    border-radius: 12px;
+  }
+
+  .code {
+    font-size: 11px;
+  }
+}

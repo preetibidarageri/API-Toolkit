@@ -1,0 +1,323 @@
+.userPage {
+  min-height: calc(100vh - 72px);
+
+  background: #eee0cc;
+
+  padding: 60px 20px;
+
+  box-sizing: border-box;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.heading {
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.tag {
+  color: #ba6a4c;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 10px;
+}
+
+.heading h1 {
+  color: #7b2525;
+
+  font-size: 42px;
+
+  margin: 0 0 12px;
+}
+
+.heading p {
+  color: #607456;
+
+  font-size: 17px;
+
+  line-height: 1.6;
+
+  margin: 0;
+}
+
+/* =========================
+   GENERATE BUTTON
+========================= */
+
+.generateButton {
+  display: block;
+
+  margin: 0 auto 40px;
+
+  padding: 14px 28px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #607456;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.generateButton:hover {
+  background: #7b2525;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 8px 18px rgba(123, 37, 37, 0.2);
+}
+
+.generateButton:active {
+  transform: translateY(0);
+}
+
+/* =========================
+   USER CARD
+========================= */
+
+.userCard {
+  display: grid;
+
+  grid-template-columns: 330px 1fr;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  border: 2px solid #ba6a4c;
+
+  box-shadow: 0 15px 35px rgba(123, 37, 37, 0.15);
+
+  transition: transform 0.3s ease;
+}
+
+.userCard:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.imageSection {
+  min-height: 380px;
+
+  background: #607456;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 25px;
+}
+
+.imageSection img {
+  width: 260px;
+
+  height: 260px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 7px solid #eee0cc;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   USER INFORMATION
+========================= */
+
+.userInfo {
+  padding: 45px;
+}
+
+.userLabel {
+  color: #ba6a4c;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 10px;
+}
+
+.userInfo h2 {
+  color: #7b2525;
+
+  font-size: 32px;
+
+  margin: 0 0 30px;
+
+  line-height: 1.2;
+}
+
+/* =========================
+   DETAILS
+========================= */
+
+.details {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+}
+
+.detail {
+  padding: 16px;
+
+  background: #eee0cc;
+
+  border-radius: 10px;
+
+  border-left: 4px solid #607456;
+}
+
+.detail span {
+  display: block;
+
+  color: #ba6a4c;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  margin-bottom: 6px;
+}
+
+.detail strong {
+  display: block;
+
+  color: #7b2525;
+
+  font-size: 14px;
+
+  word-break: break-word;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+  .userCard {
+    grid-template-columns: 1fr;
+  }
+
+  .imageSection {
+    min-height: 320px;
+  }
+
+  .userInfo {
+    padding: 35px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .userPage {
+    padding: 40px 15px;
+  }
+
+  .heading h1 {
+    font-size: 32px;
+  }
+
+  .heading p {
+    font-size: 15px;
+  }
+
+  .generateButton {
+    width: 100%;
+
+    max-width: 300px;
+  }
+
+  .imageSection {
+    min-height: 280px;
+
+    padding: 20px;
+  }
+
+  .imageSection img {
+    width: 210px;
+
+    height: 210px;
+  }
+
+  .userInfo {
+    padding: 25px 20px;
+  }
+
+  .userInfo h2 {
+    font-size: 25px;
+
+    margin-bottom: 22px;
+  }
+
+  .details {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+  .heading h1 {
+    font-size: 28px;
+  }
+
+  .imageSection img {
+    width: 180px;
+
+    height: 180px;
+  }
+
+  .userInfo {
+    padding: 22px 15px;
+  }
+}
